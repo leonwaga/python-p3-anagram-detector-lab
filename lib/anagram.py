@@ -6,12 +6,12 @@ class Anagram:
         anagrams = []
         sorted_word = sorted(self.word)
 
-        for words in possible_anagram:
-            words = words.lower()
+        for letters in possible_anagram:
+            letters = letters.lower()
 
         
-            if words != self.word and sorted(words) == sorted_word:
-                anagrams.append(words)
+            if letters != self.word and sorted(letters) == sorted_word:
+                anagrams.append(letters)
 
         return anagrams
 
